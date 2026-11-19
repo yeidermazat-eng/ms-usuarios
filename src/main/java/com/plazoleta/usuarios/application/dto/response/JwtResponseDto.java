@@ -1,0 +1,15 @@
+package com.plazoleta.usuarios.application.dto.response;
+
+public class JwtResponseDto {
+    private String token;
+    private String tipo = "Bearer";
+
+    public JwtResponseDto(String token) {
+        this.token = token;
+    }
+
+    public String getToken() { return token; }
+    public void setToken(String token) { this.token = token; }
+    public String getTipo() { return tipo; }
+    public void setTipo(String tipo) { this.tipo = tipo; }
+}
